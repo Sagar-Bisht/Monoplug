@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sp_bg_color"
+        tools:context=".fragment.ProposalDetailsFragment">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:toolbar="@{@string/proposal_details}"
+            app:toolbarImg="@{@drawable/back}" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:srcCompat="@drawable/invite_img" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="John Doe"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toTopOf="@+id/img" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drummer"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:srcCompat="@drawable/staar" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img1"
+            app:layout_constraintEnd_toStartOf="@+id/img1"
+            app:layout_constraintTop_toTopOf="@+id/img1"
+            app:srcCompat="@drawable/staar" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/img2"
+            app:layout_constraintTop_toTopOf="@+id/img2"
+            app:srcCompat="@drawable/staar" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            app:layout_goneMarginTop="13dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$150"
+            android:layout_marginEnd="13dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+        <include
+            android:id="@+id/btnAccept"
+            layout="@layout/btn_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+            app:btnText="@{@string/accept}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+
+        <include
+            android:id="@+id/btnReject"
+            layout="@layout/btn_common2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:btnText="@{@string/reject}"
+            app:layout_constraintEnd_toEndOf="@+id/btnAccept"
+            app:layout_constraintStart_toStartOf="@+id/btnAccept"
+            app:layout_constraintTop_toBottomOf="@+id/btnAccept" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

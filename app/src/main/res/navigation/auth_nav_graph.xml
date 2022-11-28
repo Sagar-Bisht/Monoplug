@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.monoplug.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+    <fragment
+        android:id="@+id/chooseOptionFragment"
+        android:name="com.example.monoplug.fragment.ChooseOptionFragment"
+        android:label="ChooseOptionFragment"
+        tools:layout="@layout/fragment_choose_option"/>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.monoplug.fragment.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup"/>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.monoplug.fragment.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password"/>
+    <dialog
+        android:id="@+id/signupPopup"
+        android:name="com.example.monoplug.popup.SignupPopup"
+        android:label="SignupPopup" />
+
+    <dialog
+        android:id="@+id/forgotPasswordPopup"
+        android:name="com.example.monoplug.popup.ForgotPasswordPopup"
+        android:label="ForgotPasswordPopup" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.example.monoplug.fragment.TermsAndConditionsFragment"
+        android:label="TermsAndConditionsFragment" />
+</navigation>

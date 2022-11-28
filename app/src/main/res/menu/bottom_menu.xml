@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_icon"
+
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/socialFragment"
+        android:icon="@drawable/social_icon"
+        android:title="Social"/>
+
+    <item
+        android:id="@+id/myJobsFragment"
+        android:icon="@drawable/my_jobs"
+        android:title="My Jobs"/>
+
+    <item
+        android:id="@+id/liveFragment"
+        android:icon="@drawable/live"
+        android:title="Live"/>
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+
+</menu>

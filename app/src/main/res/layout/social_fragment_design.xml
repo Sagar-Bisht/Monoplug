@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/clRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/sp_bg_color"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/sImg1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="MJ96"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/sImg1"
+        app:layout_constraintTop_toTopOf="@+id/sImg1" />
+
+    <TextView
+        android:id="@+id/stv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27/01/2022 11:00 AM"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="@+id/stv1"
+        app:layout_constraintTop_toBottomOf="@+id/stv1" />
+
+    <ImageView
+        android:id="@+id/sImgB"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/sImgSm1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sImg1"
+        app:srcCompat="@drawable/social_big_img" />
+
+    <ImageView
+        android:id="@+id/sImgSm1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sImg1"
+        app:srcCompat="@drawable/social_s_img" />
+
+
+    <ImageView
+        android:id="@+id/sImgSm2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sImgSm1"
+        app:srcCompat="@drawable/social_s_img" />
+
+    <ImageView
+        android:id="@+id/sImgSm3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sImgSm2"
+        app:srcCompat="@drawable/social_s_img" />
+
+    <TextView
+        android:id="@+id/stv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sImgB" />
+
+    <View
+        android:id="@+id/line_27"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#26FFFFFF"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stv3" />
+
+    <ImageView
+        android:id="@+id/imgHeart"
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sImgB"
+        app:layout_constraintStart_toStartOf="@+id/sImgB"
+        app:srcCompat="@drawable/heartt" />
+
+    <ImageView
+        android:id="@+id/imgDislike"
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgHeart"
+        app:layout_constraintStart_toEndOf="@+id/imgHeart"
+        app:layout_constraintTop_toTopOf="@+id/imgHeart"
+        app:srcCompat="@drawable/dislike" />
+
+    <ImageView
+        android:id="@+id/imgCircle"
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgDislike"
+        app:layout_constraintStart_toEndOf="@+id/imgDislike"
+        app:layout_constraintTop_toTopOf="@+id/imgDislike"
+        app:srcCompat="@drawable/circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sp_bg_color"
+        tools:context=".fragment.LiveIdeaTradingFragment">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recViewIdeaTrading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtn"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/plus"
+            app:fabCustomSize="60dp"
+            app:maxImageSize="35dp"
+            app:backgroundTint="@color/white"
+            app:borderWidth="5dp"
+            app:tint="@color/white"
+            android:backgroundTint="#6E1FAE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sp_bg_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rooot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sp_bg_color"
+            tools:context=".fragment.ChooseOptionFragment">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="160dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/splash_logo" />
+
+            <TextView
+                android:id="@+id/tvRegisterUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="98dp"
+                android:text="@string/register_as"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+                app:layout_constraintStart_toStartOf="@+id/imgLogo"
+                app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+            <include
+                android:id="@+id/btnUser"
+                layout="@layout/btn_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                app:btnText="@{@string/user}"
+                app:layout_constraintEnd_toEndOf="@+id/tvRegisterUs"
+                app:layout_constraintStart_toStartOf="@+id/tvRegisterUs"
+                app:layout_constraintTop_toBottomOf="@+id/tvRegisterUs" />
+
+            <include
+                android:id="@+id/btnArtist"
+                layout="@layout/btn_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:btnText="@{@string/artist}"
+                app:layout_constraintEnd_toEndOf="@+id/btnUser"
+                app:layout_constraintStart_toStartOf="@+id/btnUser"
+                app:layout_constraintTop_toBottomOf="@+id/btnUser" />
+
+            <TextView
+                android:id="@+id/tvAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="51dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/already_have_an_account"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnArtist"
+                app:layout_constraintStart_toStartOf="@+id/btnArtist"
+                app:layout_constraintTop_toBottomOf="@+id/btnArtist" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
